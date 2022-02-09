@@ -22,8 +22,8 @@ client.on('message', message =>{
     return;
   }
 
-  if (message.content === " WW!s "){
-    let reply_text = " WorldWolfにアカウントを登録しました ";
+  if (message.content === "にゃ～ん"){
+    let reply_text = "にゃ～ん";
     message.reply(reply_text)
       .then(message => console.log("Sent message: " + reply_text))
       .catch(console.error);
