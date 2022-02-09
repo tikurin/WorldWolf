@@ -17,9 +17,19 @@ async def ping(ctx):
     await ctx.send('pong')
     
     
-@bot.command()
-async def hello(ctx):
-    await ctx.send('hi')
+client.on('message', message =>{
+  if (message.author.id == client.user.id || message.author.bot){
+    return;
+  }
+
+  if (message.content === "WW!s"){
+    let reply_text = "WorldWolfを開始します";
+    message.reply(reply_text)
+      .then(message => console.log("Sent message: " + reply_text))
+      .catch(console.error);
+    return;
+  }
+});
 
 
 token = getenv('DISCORD_BOT_TOKEN')
