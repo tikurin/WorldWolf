@@ -19,3 +19,17 @@ async def ping(ctx):
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
+
+client.on('message', message =>{
+  if (message.author.id == client.user.id || message.author.bot){
+    return;
+  }
+
+  if (message.content === "W!!s"){}
+    let reply_text = "WorldWolfをスタートします";
+    message.reply(reply_text)
+      .then(message => console.log("Sent message: " + reply_text))
+      .catch(console.error);
+    return;
+  }
+});
