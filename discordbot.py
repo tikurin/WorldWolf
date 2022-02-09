@@ -25,7 +25,7 @@ client.on('message', message =>{
     return;
   }
 
-  if (message.content === "WW!s"){}
+  if (message.content === "WW!"){}
     let reply_text = "WorldWolfをスタートします";
     message.reply(reply_text)
       .then(message => console.log("Sent message: " + reply_text))
