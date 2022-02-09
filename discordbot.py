@@ -24,9 +24,3 @@ async def ﾉｼ(ctx):
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
-
-client.on('message', message =>{
-  if (message.author.id == client.user.id || message.author.bot){
-    return;
-  }
-
