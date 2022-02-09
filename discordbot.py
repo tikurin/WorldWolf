@@ -23,7 +23,7 @@ client.on('message', message =>{
   }
 
   if (message.content === "WW!s"){
-    let reply_text = "WorldWolfを開始します";
+    let reply_text = "WorldWolfにアカウントを登録しました";
     message.reply(reply_text)
       .then(message => console.log("Sent message: " + reply_text))
       .catch(console.error);
