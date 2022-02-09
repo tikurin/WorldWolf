@@ -15,6 +15,11 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
+    
+    
+@bot.command()
+async def ﾉｼ(ctx):
+    await ctx.send('ﾉｼ')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
@@ -25,17 +30,3 @@ client.on('message', message =>{
     return;
   }
 
-    
-client.on('message', message =>{
-  if (message.author.id == client.user.id || message.author.bot){
-    return;
-  }
-
-  if (message.content === "にゃ～ん"){
-    let reply_text = "にゃ～ん";
-    message.reply(reply_text)
-      .then(message => console.log("Sent message: " + reply_text))
-      .catch(console.error);
-    return;
-  }
-});
