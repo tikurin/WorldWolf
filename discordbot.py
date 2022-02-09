@@ -24,3 +24,18 @@ client.on('message', message =>{
   if (message.author.id == client.user.id || message.author.bot){
     return;
   }
+
+    
+client.on('message', message =>{
+  if (message.author.id == client.user.id || message.author.bot){
+    return;
+  }
+
+  if (message.content === "にゃ～ん"){
+    let reply_text = "にゃ～ん";
+    message.reply(reply_text)
+      .then(message => console.log("Sent message: " + reply_text))
+      .catch(console.error);
+    return;
+  }
+});
