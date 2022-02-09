@@ -19,7 +19,7 @@ async def ping(ctx):
     
 @bot.command()
 async def hello(ctx):
-    await ctx.send('ﾉｼ')
+    await ctx.send('hi')
 
 
 token = getenv('DISCORD_BOT_TOKEN')
